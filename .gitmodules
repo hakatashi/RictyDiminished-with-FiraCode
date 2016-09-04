@@ -1,0 +1,6 @@
+[submodule "FiraCode"]
+	path = FiraCode
+	url = https://github.com/tonsky/FiraCode.git
+[submodule "RictyDiminished"]
+	path = RictyDiminished
+	url = https://github.com/edihbrandon/RictyDiminished.git
