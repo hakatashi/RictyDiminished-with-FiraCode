@@ -1,10 +1,10 @@
-all: test.ttf
+all: test.sfd
 
-test.ttf: build-py2.py
+test.sfd: build-py2.py
 	fontforge -lang=py -script "$<"
 
 build-py2.py: build-py3.py
-	3to2 "$<" -w
+	3to2 "$<" -w -x str
 	mv -f "$<" "$@"
 	mv -f "$<.bak" "$<"
 
