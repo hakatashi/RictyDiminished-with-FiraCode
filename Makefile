@@ -9,7 +9,7 @@ ligatures.fea: ligatures.fea.jinja2 data.json build-feature.py
 test.ttf: build-py2.py
 	fontforge -lang=py -script "$<"
 
-build-py2.py: build-py3.py
+build-py2.py: build-py3.py ligatures.csv
 	3to2 "$<" -w -x str
 	mv -f "$<" "$@"
 	mv -f "$<.bak" "$<"

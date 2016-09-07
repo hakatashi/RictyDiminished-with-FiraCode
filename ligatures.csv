@@ -1,1 +1,5 @@
 => equal_greater.liga
+-> hyphen_greater.liga
+<= less_equal.liga
+<- less_hyphen.liga
+==> equal_equal_greater.liga
