@@ -1,13 +1,20 @@
 # -*- coding: utf-8 -*-
 
 import fontforge
+import argparse
 import psMat
 import json
 import csv
 import os
 
-ricty = fontforge.open('RictyDiminished/RictyDiminished-Regular.ttf')
-firacode = fontforge.open('FiraCode/distr/otf/FiraCode-Regular.otf')
+parser = argparse.ArgumentParser()
+parser.add_argument('ricty')
+parser.add_argument('firacode')
+parser.add_argument('out_font')
+options = parser.parse_args(sys.argv[1:])
+
+ricty = fontforge.open(options.ricty)
+firacode = fontforge.open(options.firacode)
 
 # Load ligatures data and create data to generate feature file
 with open('ligatures.csv', 'rb') as file:
@@ -51,7 +58,7 @@ for glyph in glyphs:
 
 # Export
 try:
-    os.remove('test.ttf')
+    os.remove(options.out_font)
 except OSError:
     pass
-ricty.generate('test.ttf')
+ricty.generate(options.out_font)

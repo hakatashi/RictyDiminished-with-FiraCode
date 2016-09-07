@@ -1,13 +1,16 @@
-all: ricty.ttf
+REGULAR = RictyDiminished-with-FiraCode-Regular.ttf
+REGULAR_UNLINK = RictyDiminished-with-FiraCode-Regular-unlinked.ttf
 
-ricty.ttf: test.ttf ligatures.fea
-	python apply-feature.py
+all: $(REGULAR)
+
+$(REGULAR): $(REGULAR_UNLINK) ligatures.fea
+	python apply-feature.py "$(word 1, $^)" "$@"
 
 ligatures.fea: ligatures.fea.jinja2 data.json build-feature.py
 	python build-feature.py
 
-test.ttf: build-py2.py
-	fontforge -lang=py -script "$<"
+$(REGULAR_UNLINK): build-py2.py RictyDiminished/RictyDiminished-Regular.ttf FiraCode/distr/otf/FiraCode-Regular.otf
+	fontforge -lang=py -script "$<" "$(word 2, $^)" "$(word 3, $^)" "$@"
 
 build-py2.py: build-py3.py ligatures.csv
 	3to2 "$<" -w -x str
