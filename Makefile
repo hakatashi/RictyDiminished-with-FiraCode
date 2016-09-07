@@ -3,6 +3,9 @@ all: ricty.ttf
 ricty.ttf: test.ttf ligatures.fea
 	python apply-feature.py
 
+ligatures.fea: ligatures.fea.jinja2 ligatures.json build-feature.py
+	python build-feature.py
+
 test.ttf: build-py2.py
 	fontforge -lang=py -script "$<"
 

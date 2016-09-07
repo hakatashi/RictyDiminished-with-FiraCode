@@ -89,6 +89,7 @@ ENV/
 .ropeproject
 
 # Application Specific
+*.fea
 *.svg
 *.ttf
 *.sfd

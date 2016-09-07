@@ -1,0 +1,31 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+languagesystem grek dflt;
+languagesystem cyrl dflt;
+languagesystem kana dflt;
+languagesystem hani dflt;
+
+lookup NULLIFY {
+    {% for glyph in nullable_glyphs %}
+        substitute {{glyph}} by space;
+    {% endfor %}
+} NULLIFY;
+
+{% for ligature in ligatures %}
+    lookup {{ligature['lookup']}} {
+        substitute {{ligature['components'][-1]}} by {{ligature['glyph']}};
+    } {{ligature['lookup']}};
+{% endfor %}
+
+feature calt {
+    {% for ligature in ligatures %}
+        substitute
+            {% for component in ligature['components'] %}
+                {% if loop.last %}
+                    {{component}}' lookup {{ligature['lookup']}}
+                {% else %}
+                    {{component}}' lookup NULLIFY
+                {% endif %}
+            {% endfor %};
+    {% endfor %}
+} calt;
