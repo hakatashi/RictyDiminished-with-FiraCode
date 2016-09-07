@@ -7,8 +7,9 @@ import csv
 import os
 
 ricty = fontforge.open('RictyDiminished/RictyDiminished-Regular.ttf')
-fira = fontforge.open('FiraCode/distr/otf/FiraCode-Regular.otf')
+firacode = fontforge.open('FiraCode/distr/otf/FiraCode-Regular.otf')
 
+# Load ligatures data and create data to generate feature file
 with open('ligatures.csv', 'rb') as file:
     ligatures_reader = csv.reader(file, delimiter=' ')
 
@@ -28,23 +29,27 @@ with open('ligatures.csv', 'rb') as file:
             'lookup': '_'.join(map(lambda name: name.upper(), component_names)),
         })
 
-# Uniqueify
+# Unique
 nullable_glyphs = list(set(nullable_glyphs))
 
+# Dump data
 with open('data.json', 'w') as file:
     file.write(unicode(json.dumps({
         'ligatures': ligatures,
         'nullable_glyphs': nullable_glyphs,
     })))
 
+# Copy needed glyphs from Fira Code font to Ricty
 for glyph in glyphs:
     ricty.createChar(-1, glyph)
-    fira.selection.select(glyph)
-    fira.copy()
+    firacode.selection.select(glyph)
+    firacode.copy()
     ricty.selection.select(glyph)
     ricty.paste()
+
     ricty.transform(psMat.scale(500 / 600))
 
+# Export
 try:
     os.remove('test.ttf')
 except OSError:
