@@ -1,4 +1,7 @@
-all: build-py2.py
+all: test.ttf
+
+test.ttf: build-py2.py
+	fontforge -lang=py -script "$<"
 
 build-py2.py: build-py3.py
 	3to2 "$<" -w

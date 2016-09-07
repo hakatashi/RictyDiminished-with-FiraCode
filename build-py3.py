@@ -1,4 +1,5 @@
 import fontforge
 import psMat
 
-print(fontforge)
+print(2 / 3)
+print(fontforge.version())
