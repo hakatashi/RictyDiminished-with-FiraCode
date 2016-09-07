@@ -1,0 +1,18 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+languagesystem grek dflt;
+languagesystem cyrl dflt;
+languagesystem kana dflt;
+languagesystem hani dflt;
+
+lookup NULLIFY {
+    substitute equal by space;
+} NULLIFY;
+
+lookup EQUAL_GREATER {
+    substitute greater by equal_greater.liga;
+} EQUAL_GREATER;
+
+feature calt {
+    substitute equal' lookup NULLIFY greater' lookup EQUAL_GREATER;
+} calt;

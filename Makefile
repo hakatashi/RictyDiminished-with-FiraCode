@@ -1,6 +1,9 @@
-all: test.sfd
+all: ricty.ttf
 
-test.sfd: build-py2.py
+ricty.ttf: test.ttf ligatures.fea
+	python apply-feature.py
+
+test.ttf: build-py2.py
 	fontforge -lang=py -script "$<"
 
 build-py2.py: build-py3.py

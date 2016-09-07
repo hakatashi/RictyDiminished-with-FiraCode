@@ -2,8 +2,6 @@ import fontforge
 import psMat
 import csv
 
-from fonttools import ttLib, feaLib
-
 with open('ligatures.csv', 'rb') as file:
     ligatures = csv.reader(file)
 
@@ -16,32 +14,4 @@ fira.copy()
 ricty.selection.select('equal_greater.liga')
 ricty.paste()
 
-ricty.addLookup('nullify', 'gsub_single', (), (
-    ('aalt', (
-        ('DFLT', ('dflt')),
-        ('cyrl', ('dflt')),
-        ('grek', ('dflt')),
-        ('hani', ('dflt')),
-        ('kana', ('JAN ', 'dflt')),
-        ('latn', ('dflt'))
-    )),
-))
-
-ricty.addLookupSubtable('nullify', 'nullify subtable')
-
-ricty['equal'].addPosSub('nullify subtable', 'asciitilde')
-
-ricty.addLookup('ligatures', 'gsub_contextchain', (), (
-    ('calt', (
-        ('DFLT', ('dflt')),
-        ('cyrl', ('dflt')),
-        ('grek', ('dflt')),
-        ('hani', ('dflt')),
-        ('kana', ('JAN ', 'dflt')),
-        ('latn', ('dflt'))
-    )),
-))
-
-ricty.addLookupSubtable('ligatures', 'ligatures subtable')
-
-ricty.save('test.sfd')
+ricty.generate('test.ttf')
