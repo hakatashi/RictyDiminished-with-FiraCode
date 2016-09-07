@@ -89,4 +89,7 @@ ENV/
 .ropeproject
 
 # Application Specific
+*.svg
+*.ttf
+*.sfd
 build-py2.py
