@@ -43,6 +43,7 @@ for glyph in glyphs:
     fira.copy()
     ricty.selection.select(glyph)
     ricty.paste()
+    ricty.transform(psMat.scale(500 / 600))
 
 try:
     os.remove('test.ttf')
