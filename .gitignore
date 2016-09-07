@@ -92,4 +92,5 @@ ENV/
 *.svg
 *.ttf
 *.sfd
+*.json
 build-py2.py
