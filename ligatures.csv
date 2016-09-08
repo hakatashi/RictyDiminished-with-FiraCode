@@ -95,5 +95,7 @@ $> dollar_greater.liga
 ~> asciitilde_greater.liga
 ~~ asciitilde_asciitilde.liga
 %% percent_percent.liga
+<= less_equal.svg
+>= greater_equal.svg
 == equal_equal.liga
 -- hyphen_hyphen.liga

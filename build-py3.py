@@ -49,12 +49,17 @@ with open('data.json', 'w') as file:
 # Copy needed glyphs from Fira Code font to Ricty
 for glyph in glyphs:
     ricty.createChar(-1, glyph)
-    firacode.selection.select(glyph)
-    firacode.copy()
-    ricty.selection.select(glyph)
-    ricty.paste()
 
-    ricty.transform(psMat.scale(500 / 600))
+    if glyph.endswith('.svg'):
+        ricty[glyph].importOutlines('svg/' + glyph)
+        ricty[glyph].width = 500
+    else:
+        firacode.selection.select(glyph)
+        firacode.copy()
+        ricty.selection.select(glyph)
+        ricty.paste()
+
+        ricty.transform(psMat.scale(500 / 600))
 
 # Export
 try:

@@ -90,8 +90,8 @@ ENV/
 
 # Application Specific
 *.fea
-*.svg
 *.ttf
 *.sfd
 *.json
+svg/*.raw.svg
 build-py2.py
