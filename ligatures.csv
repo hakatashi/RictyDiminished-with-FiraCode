@@ -95,6 +95,7 @@ $> dollar_greater.liga
 ~> asciitilde_greater.liga
 ~~ asciitilde_asciitilde.liga
 %% percent_percent.liga
+&& ampersand_ampersand.svg
 <= less_equal.svg
 >= greater_equal.svg
 == equal_equal.liga
