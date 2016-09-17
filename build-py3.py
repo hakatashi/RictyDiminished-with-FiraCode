@@ -1,12 +1,16 @@
 # -*- coding: utf-8 -*-
 
 import fontforge
+import datetime
 import textwrap
 import argparse
 import psMat
 import json
 import csv
 import os
+
+version = '1.0.0'
+today = datetime.date.today()
 
 parser = argparse.ArgumentParser()
 parser.add_argument('ricty')
@@ -67,6 +71,14 @@ ricty.fontname = 'RictyDiminishedWithFiraCode-Regular'
 ricty.fullname = 'Ricty Diminished with Fira Code Regular'
 ricty.weight = 'Regular'
 
+# Set base version of the font
+ricty.version = version
+
+# Unset other version names to make them auto-calculated by FontForge
+ricty.sfntRevision = None
+ricty.woffMajor = None
+ricty.woffMinor = None
+
 ricty.copyright = textwrap.dedent('''\
     Copyright (c) 2012-2014 Yasunori Yusa
     Copyright (c) 2006 Raph Levien
@@ -79,6 +91,13 @@ ricty.copyright = textwrap.dedent('''\
     License:
     SIL Open Font License Version 1.1 (http://scripts.sil.org/ofl)
 ''')
+
+with open('LICENSE') as file:
+    ricty.appendSFNTName('English (US)', 'License', file.read())
+
+ricty.appendSFNTName('English (US)', 'License URL', 'http://scripts.sil.org/OFL')
+
+ricty.appendSFNTName('English (US)', 'UniqueID', 'FontForge 2.0 : Ricty Diminished with Fira Code Regular : {} : {}'.format(version, today.isoformat()))
 
 # Export
 try:
