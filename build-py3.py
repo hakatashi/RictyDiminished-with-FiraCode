@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import fontforge
+import textwrap
 import argparse
 import psMat
 import json
@@ -60,6 +61,24 @@ for glyph in glyphs:
         ricty.paste()
 
         ricty.transform(psMat.scale(500 / 600))
+
+ricty.familyname = 'Ricty Diminished with Fira Code'
+ricty.fontname = 'RictyDiminishedWithFiraCode-Regular'
+ricty.fullname = 'Ricty Diminished with Fira Code Regular'
+ricty.weight = 'Regular'
+
+ricty.copyright = textwrap.dedent('''\
+    Copyright (c) 2012-2014 Yasunori Yusa
+    Copyright (c) 2006 Raph Levien
+    Copyright (c) 2006-2013 itouhiro
+    Copyright (c) 2002-2013 M+ FONTS PROJECT
+    Copyright (c) 2014 Mozilla Foundation
+    Copyright (c) 2014 Telefonica S.A.
+    Copyright (c) 2014 Nikita Prokopov
+    Copyright (c) 2016 Koki Takahashi
+    License:
+    SIL Open Font License Version 1.1 (http://scripts.sil.org/ofl)
+''')
 
 # Export
 try:

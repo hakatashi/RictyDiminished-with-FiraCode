@@ -30,8 +30,8 @@ www w_w_w.liga
 #_ numbersign_underscore.liga
 .- period_hyphen.liga
 .= period_equal.liga
-..< period_period_less.liga
 ... period_period_period.liga
+..< period_period_less.liga
 .. period_period.liga
 ?? question_question.liga
 ?= question_equal.liga
