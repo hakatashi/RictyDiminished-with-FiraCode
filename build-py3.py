@@ -17,10 +17,15 @@ parser.add_argument('ricty')
 parser.add_argument('firacode')
 parser.add_argument('out_font')
 parser.add_argument('weight')
+parser.add_argument('discord')
 options = parser.parse_args(sys.argv[1:])
 
-fontname = 'RictyDiminishedWithFiraCode'
-familyname = 'Ricty Diminished with Fira Code'
+if options.discord == 'true':
+    fontname = 'RictyDiminishedDiscordWithFiraCode'
+    familyname = 'Ricty Diminished Discord with Fira Code'
+else:
+    fontname = 'RictyDiminishedWithFiraCode'
+    familyname = 'Ricty Diminished with Fira Code'
 weight = options.weight
 
 ricty = fontforge.open(options.ricty)
@@ -126,7 +131,7 @@ with open('LICENSE') as file:
 
 ricty.appendSFNTName('English (US)', 'License URL', 'http://scripts.sil.org/OFL')
 
-ricty.appendSFNTName('English (US)', 'UniqueID', 'FontForge 2.0 : Ricty Diminished with Fira Code Regular : {} : {}'.format(version, today.isoformat()))
+ricty.appendSFNTName('English (US)', 'UniqueID', '{} {} : {} : {}'.format(familyname, weight, version, today.isoformat()))
 
 # Export
 try:
