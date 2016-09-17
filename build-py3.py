@@ -16,7 +16,12 @@ parser = argparse.ArgumentParser()
 parser.add_argument('ricty')
 parser.add_argument('firacode')
 parser.add_argument('out_font')
+parser.add_argument('weight')
 options = parser.parse_args(sys.argv[1:])
+
+fontname = 'RictyDiminishedWithFiraCode'
+familyname = 'Ricty Diminished with Fira Code'
+weight = options.weight
 
 ricty = fontforge.open(options.ricty)
 firacode = fontforge.open(options.firacode)
@@ -29,14 +34,14 @@ with open('ligatures.csv', 'rb') as file:
     nullable_glyphs = []
     glyphs = []
 
-    for [components, glyph] in ligatures_reader:
-        glyphs.append(glyph)
+    for [components, source_type, name] in ligatures_reader:
+        glyphs.append((source_type, name))
         component_names = list(map(lambda c: ricty[ord(c)].glyphname, list(components)))
 
         nullable_glyphs.extend(component_names[:-1])
 
         ligatures.append({
-            'glyph': glyph,
+            'glyph': name,
             'components': component_names,
             'lookup': '_'.join(map(lambda name: name.upper(), component_names)),
         })
@@ -52,24 +57,24 @@ with open('data.json', 'w') as file:
     })))
 
 # Copy needed glyphs from Fira Code font to Ricty
-for glyph in glyphs:
-    ricty.createChar(-1, glyph)
+for (source_type, name) in glyphs:
+    ricty.createChar(-1, name)
 
-    if glyph.endswith('.svg'):
-        ricty[glyph].importOutlines('svg/' + glyph)
-        ricty[glyph].width = 500
-    else:
-        firacode.selection.select(glyph)
+    if source_type == 'svg':
+        ricty[name].importOutlines('svg/{}.{}.svg'.format(name, weight))
+        ricty[name].width = 500
+    elif source_type == 'glf':
+        firacode.selection.select(name)
         firacode.copy()
-        ricty.selection.select(glyph)
+        ricty.selection.select(name)
         ricty.paste()
 
         ricty.transform(psMat.scale(500 / 600))
 
-ricty.familyname = 'Ricty Diminished with Fira Code'
-ricty.fontname = 'RictyDiminishedWithFiraCode-Regular'
-ricty.fullname = 'Ricty Diminished with Fira Code Regular'
-ricty.weight = 'Regular'
+ricty.familyname = familyname
+ricty.fontname = '{}-{}'.format(fontname, weight)
+ricty.fullname = '{} {}'.format(familyname, weight)
+ricty.weight = weight
 
 # Set base version of the font
 ricty.version = version

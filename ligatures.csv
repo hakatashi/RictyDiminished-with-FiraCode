@@ -1,102 +1,102 @@
-www w_w_w.liga
-*/ asterisk_slash.liga
-*** asterisk_asterisk_asterisk.liga
-** asterisk_asterisk.liga
-\\\ backslash_backslash_backslash.liga
-\\ backslash_backslash.liga
-]# bracketright_numbersign.liga
-::: colon_colon_colon.liga
-:: colon_colon.liga
-=:= equal_colon_equal.liga
-:= colon_equal.liga
-!! exclam_exclam.liga
-!== exclam_equal_equal.liga
-!= exclam_equal.liga
---- hyphen_hyphen_hyphen.liga
---> hyphen_hyphen_greater.liga
-->> hyphen_greater_greater.liga
--<< hyphen_less_less.liga
--> hyphen_greater.liga
--< hyphen_less.liga
--~ hyphen_asciitilde.liga
-#### numbersign_numbersign_numbersign_numbersign.liga
-### numbersign_numbersign_numbersign.liga
-## numbersign_numbersign.liga
-#{ numbersign_braceleft.liga
-#[ numbersign_bracketleft.liga
-#( numbersign_parenleft.liga
-#? numbersign_question.liga
-#_( numbersign_underscore_parenleft.liga
-#_ numbersign_underscore.liga
-.- period_hyphen.liga
-.= period_equal.liga
-... period_period_period.liga
-..< period_period_less.liga
-.. period_period.liga
-?? question_question.liga
-?= question_equal.liga
-;; semicolon_semicolon.liga
-/* slash_asterisk.liga
-/== slash_equal_equal.liga
-/= slash_equal.liga
-/// slash_slash_slash.liga
-// slash_slash.liga
-||= bar_bar_equal.liga
-|| bar_bar.liga
-|= bar_equal.liga
-|> bar_greater.liga
-^= asciicircum_equal.liga
-+++ plus_plus_plus.liga
-++ plus_plus.liga
-=== equal_equal_equal.liga
-==> equal_equal_greater.liga
-=>> equal_greater_greater.liga
-=> equal_greater.liga
-=<< equal_less_less.liga
-=/= equal_slash_equal.liga
->- greater_hyphen.liga
->=> greater_equal_greater.liga
->>- greater_greater_hyphen.liga
->>= greater_greater_equal.liga
->>> greater_greater_greater.liga
->> greater_greater.liga
-<*> less_asterisk_greater.liga
-<* less_asterisk.liga
-*> asterisk_greater.liga
-<|> less_bar_greater.liga
-<| less_bar.liga
-<$> less_dollar_greater.liga
-<$ less_dollar.liga
-$> dollar_greater.liga
-<!-- less_exclam_hyphen_hyphen.liga
-<-- less_hyphen_hyphen.liga
-<-> less_hyphen_greater.liga
-<+> less_plus_greater.liga
-<+ less_plus.liga
-+> plus_greater.liga
-<== less_equal_equal.liga
-<=> less_equal_greater.liga
-<=< less_equal_less.liga
-<- less_hyphen.liga
-<> less_greater.liga
-<<- less_less_hyphen.liga
-<<= less_less_equal.liga
-<<< less_less_less.liga
-<< less_less.liga
-<~~ less_asciitilde_asciitilde.liga
-<~ less_asciitilde.liga
-</> less_slash_greater.liga
-</ less_slash.liga
-/> slash_greater.liga
-~@ asciitilde_at.liga
-~- asciitilde_hyphen.liga
-~= asciitilde_equal.liga
-~~> asciitilde_asciitilde_greater.liga
-~> asciitilde_greater.liga
-~~ asciitilde_asciitilde.liga
-%% percent_percent.liga
-&& ampersand_ampersand.svg
-<= less_equal.svg
->= greater_equal.svg
-== equal_equal.liga
--- hyphen_hyphen.liga
+www glf w_w_w.liga
+*/ glf asterisk_slash.liga
+*** glf asterisk_asterisk_asterisk.liga
+** glf asterisk_asterisk.liga
+\\\ glf backslash_backslash_backslash.liga
+\\ glf backslash_backslash.liga
+]# glf bracketright_numbersign.liga
+::: glf colon_colon_colon.liga
+:: glf colon_colon.liga
+=:= glf equal_colon_equal.liga
+:= glf colon_equal.liga
+!! glf exclam_exclam.liga
+!== glf exclam_equal_equal.liga
+!= glf exclam_equal.liga
+--- glf hyphen_hyphen_hyphen.liga
+--> glf hyphen_hyphen_greater.liga
+->> glf hyphen_greater_greater.liga
+-<< glf hyphen_less_less.liga
+-> glf hyphen_greater.liga
+-< glf hyphen_less.liga
+-~ glf hyphen_asciitilde.liga
+#### glf numbersign_numbersign_numbersign_numbersign.liga
+### glf numbersign_numbersign_numbersign.liga
+## glf numbersign_numbersign.liga
+#{ glf numbersign_braceleft.liga
+#[ glf numbersign_bracketleft.liga
+#( glf numbersign_parenleft.liga
+#? glf numbersign_question.liga
+#_( glf numbersign_underscore_parenleft.liga
+#_ glf numbersign_underscore.liga
+.- glf period_hyphen.liga
+.= glf period_equal.liga
+... glf period_period_period.liga
+..< glf period_period_less.liga
+.. glf period_period.liga
+?? glf question_question.liga
+?= glf question_equal.liga
+;; glf semicolon_semicolon.liga
+/* glf slash_asterisk.liga
+/== glf slash_equal_equal.liga
+/= glf slash_equal.liga
+/// glf slash_slash_slash.liga
+// glf slash_slash.liga
+||= glf bar_bar_equal.liga
+|| glf bar_bar.liga
+|= glf bar_equal.liga
+|> glf bar_greater.liga
+^= glf asciicircum_equal.liga
++++ glf plus_plus_plus.liga
+++ glf plus_plus.liga
+=== glf equal_equal_equal.liga
+==> glf equal_equal_greater.liga
+=>> glf equal_greater_greater.liga
+=> glf equal_greater.liga
+=<< glf equal_less_less.liga
+=/= glf equal_slash_equal.liga
+>- glf greater_hyphen.liga
+>=> glf greater_equal_greater.liga
+>>- glf greater_greater_hyphen.liga
+>>= glf greater_greater_equal.liga
+>>> glf greater_greater_greater.liga
+>> glf greater_greater.liga
+<*> glf less_asterisk_greater.liga
+<* glf less_asterisk.liga
+*> glf asterisk_greater.liga
+<|> glf less_bar_greater.liga
+<| glf less_bar.liga
+<$> glf less_dollar_greater.liga
+<$ glf less_dollar.liga
+$> glf dollar_greater.liga
+<!-- glf less_exclam_hyphen_hyphen.liga
+<-- glf less_hyphen_hyphen.liga
+<-> glf less_hyphen_greater.liga
+<+> glf less_plus_greater.liga
+<+ glf less_plus.liga
++> glf plus_greater.liga
+<== glf less_equal_equal.liga
+<=> glf less_equal_greater.liga
+<=< glf less_equal_less.liga
+<- glf less_hyphen.liga
+<> glf less_greater.liga
+<<- glf less_less_hyphen.liga
+<<= glf less_less_equal.liga
+<<< glf less_less_less.liga
+<< glf less_less.liga
+<~~ glf less_asciitilde_asciitilde.liga
+<~ glf less_asciitilde.liga
+</> glf less_slash_greater.liga
+</ glf less_slash.liga
+/> glf slash_greater.liga
+~@ glf asciitilde_at.liga
+~- glf asciitilde_hyphen.liga
+~= glf asciitilde_equal.liga
+~~> glf asciitilde_asciitilde_greater.liga
+~> glf asciitilde_greater.liga
+~~ glf asciitilde_asciitilde.liga
+%% glf percent_percent.liga
+&& svg ampersand_ampersand
+<= svg less_equal
+>= svg greater_equal
+== glf equal_equal.liga
+-- glf hyphen_hyphen.liga
