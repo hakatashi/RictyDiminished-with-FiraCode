@@ -71,6 +71,30 @@ for (source_type, name) in glyphs:
 
         ricty.transform(psMat.scale(500 / 600))
 
+# Import Powerline glyphs
+powerline_codes = [0xE0A0, 0xE0A1, 0xE0A2, 0xE0B0, 0xE0B1, 0xE0B2, 0xE0B3]
+
+for codepoint in powerline_codes:
+    ricty.createChar(codepoint)
+    firacode.selection.select(('unicode',), codepoint)
+    firacode.copy()
+    ricty.selection.select(('unicode',), codepoint)
+    ricty.paste()
+
+# Modify glyphs
+
+# Branch
+ricty[0xE0A0].transform(psMat.translate(-50, 0))
+# Line Number
+ricty[0xE0A1].transform(psMat.translate(-50, 0))
+# Locked
+ricty[0xE0A2].transform(psMat.scale(500 / 600))
+
+# Reset widths
+for codepoint in powerline_codes:
+    ricty[codepoint].width = 500
+
+# Set font name
 ricty.familyname = familyname
 ricty.fontname = '{}-{}'.format(fontname, weight)
 ricty.fullname = '{} {}'.format(familyname, weight)
