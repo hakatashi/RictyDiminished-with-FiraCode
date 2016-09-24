@@ -8,6 +8,7 @@ import psMat
 import json
 import csv
 import os
+import sys
 
 version = '1.0.0'
 today = datetime.date.today()
