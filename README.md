@@ -1,6 +1,9 @@
 # RictyDiminished-with-FiraCode
 
-The best Japanese programming font meets the awesome ligatures of Firacode
+日本一美しいプログラミングフォント [Ricty Diminished](https://github.com/edihbrandon/RictyDiminished) に、[FiraCode](https://github.com/tonsky/FiraCode)のプログラミング合字をミックス。
+
+![](https://i.imgur.com/dc2kfzf.png)
+![](https://i.imgur.com/TkbPojr.png)
 
 ## Download
 
