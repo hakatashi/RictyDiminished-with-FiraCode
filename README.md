@@ -2,7 +2,7 @@
 
 日本一美しいプログラミングフォント [Ricty Diminished](https://github.com/edihbrandon/RictyDiminished) に、[FiraCode](https://github.com/tonsky/FiraCode)のプログラミング合字をミックス。
 
-![](https://i.imgur.com/dc2kfzf.png)
+![](https://i.imgur.com/nPUBImM.png)
 ![](https://i.imgur.com/TkbPojr.png)
 
 ## Download
