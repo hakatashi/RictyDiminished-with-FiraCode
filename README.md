@@ -16,3 +16,7 @@
 
 * [Regular](https://github.com/hakatashi/RictyDiminished-with-FiraCode/releases/download/0.0.1/RictyDiminishedDiscord-with-FiraCode-Regular.ttf)
 * [Bold](https://github.com/hakatashi/RictyDiminished-with-FiraCode/releases/download/0.0.1/RictyDiminishedDiscord-with-FiraCode-Bold.ttf)
+
+## License
+
+[SIL OPEN FONT LICENSE Version 1.1](LICENSE)
