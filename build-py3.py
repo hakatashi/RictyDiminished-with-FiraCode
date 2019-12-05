@@ -122,7 +122,8 @@ ricty.copyright = textwrap.dedent('''\
     Copyright (c) 2014 Mozilla Foundation
     Copyright (c) 2014 Telefonica S.A.
     Copyright (c) 2014 Nikita Prokopov
-    Copyright (c) 2016 Koki Takahashi
+    Copyright (c) 2014 The Fira Code Project Authors (https://github.com/tonsky/FiraCode)
+    Copyright (c) 2016-2019 Koki Takahashi
     License:
     SIL Open Font License Version 1.1 (http://scripts.sil.org/ofl)
 ''')
