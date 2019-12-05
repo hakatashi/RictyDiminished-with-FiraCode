@@ -37,7 +37,7 @@ $(BOLD_DISCORD_UNLINK): build-py2.py RictyDiminished/RictyDiminishedDiscord-Bold
 	fontforge -lang=py -script "$<" "$(word 2, $^)" "$(word 3, $^)" "$@" Bold true
 
 build-py2.py: build-py3.py ligatures.csv
-	python -m 3to2 "$<" -w -x str
+	3to2 "$<" -w -x str
 	mv -f "$<" "$@"
 	mv -f "$<.bak" "$<"
 

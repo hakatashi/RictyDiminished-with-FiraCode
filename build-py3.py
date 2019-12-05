@@ -10,7 +10,7 @@ import csv
 import os
 import sys
 
-version = '1.0.0'
+version = '1.1.0'
 today = datetime.date.today()
 
 parser = argparse.ArgumentParser()
@@ -75,7 +75,7 @@ for (source_type, name) in glyphs:
         ricty.selection.select(name)
         ricty.paste()
 
-        ricty.transform(psMat.scale(500 / 600))
+        ricty.transform(psMat.scale(1000 / 1950))
 
 # Import Powerline glyphs
 powerline_codes = [0xE0A0, 0xE0A1, 0xE0A2, 0xE0B0, 0xE0B1, 0xE0B2, 0xE0B3]
