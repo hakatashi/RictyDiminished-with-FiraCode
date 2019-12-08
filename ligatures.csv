@@ -20,7 +20,7 @@ www glf w_w_w.liga
 #### glf numbersign_numbersign_numbersign_numbersign.liga
 ### glf numbersign_numbersign_numbersign.liga
 ## glf numbersign_numbersign.liga
-#{ glf numbersign_braceleft.liga
+#{ svg numbersign_braceleft
 #[ glf numbersign_bracketleft.liga
 #( glf numbersign_parenleft.liga
 #? glf numbersign_question.liga
