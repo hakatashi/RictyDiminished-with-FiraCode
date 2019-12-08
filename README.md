@@ -9,13 +9,13 @@
 
 ### Ricty Diminished with FiraCode
 
-* [Regular](https://github.com/hakatashi/RictyDiminished-with-FiraCode/releases/download/1.1.1/RictyDiminished-with-FiraCode-Regular.ttf)
-* [Bold](https://github.com/hakatashi/RictyDiminished-with-FiraCode/releases/download/1.1.1/RictyDiminished-with-FiraCode-Bold.ttf)
+* [Regular](https://github.com/hakatashi/RictyDiminished-with-FiraCode/releases/download/1.2.0/RictyDiminished-with-FiraCode-Regular.ttf)
+* [Bold](https://github.com/hakatashi/RictyDiminished-with-FiraCode/releases/download/1.2.0/RictyDiminished-with-FiraCode-Bold.ttf)
 
 ### Ricty Diminished Discord with FiraCode
 
-* [Regular](https://github.com/hakatashi/RictyDiminished-with-FiraCode/releases/download/1.1.1/RictyDiminishedDiscord-with-FiraCode-Regular.ttf)
-* [Bold](https://github.com/hakatashi/RictyDiminished-with-FiraCode/releases/download/1.1.1/RictyDiminishedDiscord-with-FiraCode-Bold.ttf)
+* [Regular](https://github.com/hakatashi/RictyDiminished-with-FiraCode/releases/download/1.2.0/RictyDiminishedDiscord-with-FiraCode-Regular.ttf)
+* [Bold](https://github.com/hakatashi/RictyDiminished-with-FiraCode/releases/download/1.2.0/RictyDiminishedDiscord-with-FiraCode-Bold.ttf)
 
 ## License
 
