@@ -84,7 +84,7 @@ $> glf dollar_greater.liga
 <~~ glf less_asciitilde_asciitilde.liga
 <~ glf less_asciitilde.liga
 </> glf less_slash_greater.liga
-</ glf less_slash.liga
+</ svg less_slash
 /> glf slash_greater.liga
 ~@ glf asciitilde_at.liga
 ~- glf asciitilde_hyphen.liga
