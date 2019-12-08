@@ -10,7 +10,7 @@ import csv
 import os
 import sys
 
-version = '1.1.1'
+version = '1.2.0'
 today = datetime.date.today()
 
 parser = argparse.ArgumentParser()
