@@ -33,7 +33,7 @@ ricty = fontforge.open(options.ricty)
 firacode = fontforge.open(options.firacode)
 
 # Load ligatures data and create data to generate feature file
-with open('ligatures.csv', 'rb') as file:
+with open('ligatures.csv', 'r') as file:
     ligatures_reader = csv.reader(file, delimiter=' ')
 
     ligatures = []
@@ -57,10 +57,10 @@ nullable_glyphs = list(set(nullable_glyphs))
 
 # Dump data
 with open('data.json', 'w') as file:
-    file.write(unicode(json.dumps({
+    file.write(json.dumps({
         'ligatures': ligatures,
         'nullable_glyphs': nullable_glyphs,
-    })))
+    }))
 
 # Copy needed glyphs from Fira Code font to Ricty
 for (source_type, name) in glyphs:
