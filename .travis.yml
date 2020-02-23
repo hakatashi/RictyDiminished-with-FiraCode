@@ -3,8 +3,8 @@ addons:
   apt:
     sources:
       # for some reason python3-fontforge is only available in focal
-      - sourceline: 'deb http://us.archive.ubuntu.com/ubuntu/ focal main restricted'
-      - sourceline: 'deb http://us.archive.ubuntu.com/ubuntu/ focal universe'
+      - sourceline: deb http://us.archive.ubuntu.com/ubuntu/ focal main restricted
+      - sourceline: deb http://us.archive.ubuntu.com/ubuntu/ focal universe
     packages:
       - python3
       - python3-fontforge
@@ -15,7 +15,7 @@ script:
 deploy:
   provider: releases
   api_key:
-    secure: Irn5gzraLVLX2JwCIJtWcjO7mj9rj+u6EbczQYtfpif/Q7mS1L3En1IcTBwakqa1RYmIRzH/91HWMCDRIH6JMPjxdzcKsa+1BFtJys5/yzpMKT2JQIvBtydyqvCZ/vzIe1ehdvsqVEtaCGYipcEZjaS7dDNKjOAN1p1r2czxvt/5pPg2suLfse7lMEuimXDYDJUt4TbaNT1i1p6ygGZxTlBaoQ4AIWh4PqzoTAGmSJcr/pQoWycgDW60T4xujTajouWFEeW3xPOH5mLfAuwDL6egndqGMiBsFfVIJbICCjiz1Zn2p0/dcDKWT3M8qSf0QNoYk0aUzkL70Bn4roLFaqs3S0x5BRfu5o5eFbW9E6GafBjekB6uBRon68zutkCtTY+5nnrD64RtIhKbbTBY+9woO2U4AZCvv453hTd4HBpHFAlXE4J4SjprUW4cEP/6vqObD372/TwopdW/anCL7Ygj3Dd3I6HChBVsn1SPrFgCnOIiYnrNHKlyr941XSr0UUSQBsOzjGUFqjTysVAsdji6h5eQ0TD4V/wrJ1qtc+s77kDJIBP/fLNsHbfpxCzBmjkR/jR91TsJiSOev4WbkYouuQdU+nptBorpMwOuq2MFlIKbpxlix5bgnVJ1VmcRzYSiB+/WGfuxmdmcTYl48VsBxT5GolO+MV1j3grFDao=
+    secure: Bo8AlrlQdj4Z8KIu4TKg05HQznAdFdG2uSpe3Hg9jdsSR1AFRHcVsLhs8GNENTykNg66q7gZZJkPlLd0CPLD6dQ1seDqvllMpcBYiNIboeo5rAQ2Y92Q+aWGUZVblhsl+2WEQOyPEYzOFLbGrVKWjZsX2z0s9k14Sn+aRNlAD8fKVeZQzQtNpBiOZzdjkBUYyjwz+Hl+DV4jRpKJtyQ/g/DaSPLrZ3lzqkW1ANPcBTfBZrj5Qfb/FRydJ2FLlwpP3Rbq0zlW1ATKP9qtxXMvyowQtMxjWiHtwW31wLWhjvQBEisjZBgBvUhbZsKxAObgKOneNoxKOFXv2LmX75qwdOROMttlSDgmn9H48WNWJ/VBFOePLtYQjGTlsDXI7iTmDTAEDSsjA+ZGv4K6QX8J9sAUnRnl31SQIaioyfw3VBkNkp8oc6kvmPB+SLIsyjazKlkBc5Ye8qnA7QiB0MlXcpXS3Tv87MgAmdvLoixL3Mh3sIEsgC9sSB78WQjS1sHRrTHigAAoHEuRKM09CsNQ3MlyfCD7DXFWYDF9IlbsoK3QncWyIvBtdMlS9qbGM17/8LohYNKxU8XsOS/EGXgnMLkYyDn/IUQ3bUzFERBVSf4OUgkPVyeTcJDfmmWD6ZWFcsy2wAKlyJKjmPGv6IxD+PjQGtdhk8gDkVvncGeGBz8=
   file:
     - RictyDiminished-with-FiraCode-Regular.ttf
     - RictyDiminished-with-FiraCode-Bold.ttf
@@ -24,5 +24,6 @@ deploy:
   skip_cleanup: true
   on:
     tags: true
+    repo: hakatashi/RictyDiminished-with-FiraCode
 notifications:
   webhooks: http://webhook.hakatashi.com/travis
